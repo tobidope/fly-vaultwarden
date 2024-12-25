@@ -4,9 +4,11 @@ ARG SUPERCRONIC_VERSION=v0.2.33
 # renovate: datasource=github-releases depName=DarthSim/overmind
 ARG OVERMIND_VERSION=v2.5.1
 
+ARG ARCH=amd64
+
 # Binary file names
-ARG SUPERCRONIC=supercronic-linux-amd64
-ARG OVERMIND=overmind-${OVERMIND_VERSION}-linux-amd64
+ARG SUPERCRONIC=supercronic-linux-${ARCH}
+ARG OVERMIND=overmind-${OVERMIND_VERSION}-linux-${ARCH}
 
 FROM vaultwarden/server:1.32.7-alpine as vaultwarden
 
@@ -35,7 +37,7 @@ ARG OVERMIND_VERSION
 ARG SUPERCRONIC
 ARG OVERMIND
 
-ENV OVERMIND_FILE=overmind-${OVERMIND_VERSION}-linux-amd64.gz
+ENV OVERMIND_FILE=overmind-${OVERMIND_VERSION}-linux-${ARCH}.gz
 
 ENV OVERMIND_URL=https://github.com/DarthSim/overmind/releases/download/${OVERMIND_VERSION}/${OVERMIND_FILE}
 
