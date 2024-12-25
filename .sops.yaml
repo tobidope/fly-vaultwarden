@@ -1,2 +1,3 @@
 creation_rules:
-  - age: "age1nrdys2hstwztrn4eszjk5jlt3yq8z5hmwwtyecsz4l3eawkrpp2suyfhfn"
+  - path_regex: \.config\.env$
+    age: "age1nrdys2hstwztrn4eszjk5jlt3yq8z5hmwwtyecsz4l3eawkrpp2suyfhfn"
