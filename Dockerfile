@@ -10,7 +10,7 @@ ARG ARCH=amd64
 ARG SUPERCRONIC=supercronic-linux-${ARCH}
 ARG OVERMIND=overmind-${OVERMIND_VERSION}-linux-${ARCH}
 
-FROM vaultwarden/server:1.32.7-alpine as vaultwarden
+FROM vaultwarden/server:1.33.0-alpine as vaultwarden
 
 #
 # Supercronic
