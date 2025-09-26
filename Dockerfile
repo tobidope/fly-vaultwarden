@@ -50,7 +50,7 @@ RUN wget "$OVERMIND_URL" && gunzip ${OVERMIND_FILE} && chmod +x "$OVERMIND"
 #
 # Fly app
 #
-FROM caddy:2.10.0-alpine
+FROM caddy:2.10.2-alpine
 LABEL org.opencontainers.image.source https://github.com/tobidope/fly-vaultwarden
 ARG SUPERCRONIC
 ARG OVERMIND
